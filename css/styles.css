@@ -30,9 +30,19 @@ height: 100%;
   padding: 0;
 float: right;
 }
-#section_background{
-height: 200px;
-	background: url("../assets/images/bg.jpg");
-	background-repeat: no-repeat;
-    background-size: 100% 100%;
+#content{
+height:525px;
+background: url("../assets/images/bg.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+ opacity: 0.3; 
+ position: relative;
+
+}
+#globe-on-right
+{
+position: absolute;
+right: 0;
+bottom: 0;
+ padding: 20px;
 }
