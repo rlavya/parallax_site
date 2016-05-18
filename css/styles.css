@@ -1,7 +1,25 @@
-#header{
-     height:50px;
-    background:#F0F0F0;
-    border:1px solid #CCC;
-    width:960px;
-    margin:0px auto;
+body, p, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica;
+
+}
+#header
+{
+	height: 60px;
+	background-color: #2B3C43;
+	border-bottom: 1px solid #ccc;	
+}
+#header img{
+width: 50%;
+height: 100%;
+  margin: 0;
+  padding: 0;
+float: right;
+}
+#section_background{
+	position: absolute;
+	background: url("../assets/images/bg.jpg");
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
