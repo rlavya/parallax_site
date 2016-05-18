@@ -15,10 +15,10 @@ body, p,h1, h2, h3, h4, h5 {
 	position: fixed;
 	top:0;
 }
-#header-contatiner {
+#header_contatiner {
     padding: 20px;
 }
-#site-title {
+#site_title {
     color:#fff;
     text-align: center;
     font-size: 25px;
@@ -75,7 +75,7 @@ body, p,h1, h2, h3, h4, h5 {
 
 
 }
-#content-heading
+#content_heading
 {
 	margin: 0 auto;
 	text-align: center;
@@ -84,7 +84,23 @@ body, p,h1, h2, h3, h4, h5 {
 
 main {
 margin-top: 75px;
+height: auto;
     background: url("../assets/images/bg.png") no-repeat fixed;
     background-size: 100% 100% ;
+    
+}
+
+#content_business_logic ul{
+	 list-style-type: none;
+}
+#content_business_logic li{
+	padding: 5px;
+}
+#official_launch_note{
+	color: #FF0000;
+
+}
+#content_official_launch{
+	margin-bottom: 100px;
 }
 
