@@ -8,7 +8,7 @@ body, p, h2, h3, h4, h5 {
 {
 	height: 60px;
 	background-color: #2B3C43;
-	border-bottom: 1px solid #ccc;	
+	border-bottom: 1px solid #ccc;
 }
 #header img{
 width: 50%;
@@ -22,4 +22,40 @@ float: right;
 	background: url("../assets/images/bg.jpg");
 	background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+#footer {
+    height: 60px;
+    background-color: #2B3C43;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#footer_left, #footer_right, #footer_middle {
+    display: inline-block;
+}
+#footer_left img {
+    width: 53%;
+}
+#footer_right {
+    float: right;
+    width: 25%;
+}
+#footer_right img {
+    height: 62px;
+    float: right;
+}
+#footer_middle ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#footer_middle li {
+    float: left;
+}
+#footer_middle li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 8px;
 }
