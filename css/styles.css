@@ -195,3 +195,18 @@ padding: 25px;
 #content_about_the_founder h2 {
     font-weight: normal;
 }
+
+#content_official_launch ul {
+margin: 0 auto;
+  list-style:none;
+  }
+
+  #content_official_launch li {
+    width:24.4333%;
+    display:inline-block;
+    text-align:center;
+    }
+   #content_official_launch  span {
+      font-size: 42px;
+      font-weight:bold;
+    }
