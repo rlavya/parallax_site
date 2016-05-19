@@ -86,7 +86,7 @@ main {
 
     background: url("../assets/images/bg.png") no-repeat fixed;
     background-size: 100% 100% ;
-    
+
 }
 
 #content_business_logic ul{
@@ -150,4 +150,22 @@ main {
     border-radius: 5px;
     margin-bottom: 15px;
     margin-right: 15px;
+}
+.join_team_select {
+    width: 47%;
+}
+.overseas_select {
+    width: 22%;
+}
+.submit_button {
+    text-align: right;
+    margin-right: 24px;
+}
+.submit_button button {
+    padding: 11px 35px;
+    color: #fff;
+    background-color: #2B3C43;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
 }
