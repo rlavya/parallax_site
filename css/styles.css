@@ -192,11 +192,11 @@ padding: 25px;
 #content_about_the_founder h2 {
     font-weight: normal;
 }
-#content_about_us {
+#content_about_us, #content_business_logic {
     padding: 5% 21% 10% 10%;
     color: #2C3C43;
 }
-#content_about_us h2 {
+#content_about_us h2,#content_business_logic h2 {
     font-weight: normal;
     font-size: 32px;
 }
