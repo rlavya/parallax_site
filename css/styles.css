@@ -13,6 +13,7 @@ body, p,h1, h2, h3, h4, h5 {
 	width: 100%;
 	position: fixed;
 	top:0;
+    z-index: 999;
 }
 #header_contatiner {
     padding: 20px;
@@ -35,6 +36,8 @@ body, p,h1, h2, h3, h4, h5 {
     position: fixed;
     bottom: 0;
     width: 100%;
+      z-index: 999;
+}
 }
 #footer_left, #footer_right, #footer_middle {
     display: inline-block;
