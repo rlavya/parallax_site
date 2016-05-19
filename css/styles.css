@@ -1,7 +1,7 @@
 html, body, main {
 	height: 100%;
 }
-body, p,h1, h2, h3, h4, h5 {
+body,h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica;
@@ -14,7 +14,7 @@ body, p,h1, h2, h3, h4, h5 {
 	position: fixed;
 	top:0;
     z-index: 999;
-}
+   }
 #header_contatiner {
     padding: 20px;
 }
@@ -36,8 +36,8 @@ body, p,h1, h2, h3, h4, h5 {
     position: fixed;
     bottom: 0;
     width: 100%;
-      z-index: 999;
-}
+    z-index: 999;
+   
 }
 #footer_left, #footer_right, #footer_middle {
     display: inline-block;
@@ -187,4 +187,11 @@ padding: 25px;
 	padding: 20px;
 	color: #FF0000;
 
+}
+#content_about_the_founder {
+    padding: 10% 21% 10% 10%;
+    color: #2C3C43;
+}
+#content_about_the_founder h2 {
+    font-weight: normal;
 }
