@@ -192,3 +192,18 @@ padding: 25px;
 #content_about_the_founder h2 {
     font-weight: normal;
 }
+#content_about_us {
+    padding: 5% 21% 10% 10%;
+    color: #2C3C43;
+}
+#content_about_us h2 {
+    font-weight: normal;
+    font-size: 32px;
+}
+#content {
+    padding: 14% 0px 17% 0px;
+}
+#content_heading1 {
+    font-size: 25px;
+    text-align: center;
+}
