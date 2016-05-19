@@ -87,9 +87,7 @@ main {
 #content_business_logic li{
 	padding: 5px;
 }
-#official_launch_note{
-	color: #FF0000;
-}
+
 #content_official_launch{
 	margin-bottom: 100px;
 }
@@ -162,6 +160,30 @@ main {
     border: none;
     border-radius: 5px;
     font-size: 12px;
+
+}
+#content_official_launch{
+	padding-top: 115px;
+}
+
+#official_launch_heading
+{
+	padding: 25px;
+	font-size: 30px;
+}
+#something_awesome{
+	font-size: 20px;
+padding: 25px;
+}
+#stay_tuned{
+	font-size: 20px;
+	padding: 25px;
+}
+#official_launch_note{
+	font-size: 15px;
+	padding: 20px;
+	color: #FF0000;
+
 }
 #content_about_the_founder {
     padding: 10% 21% 10% 10%;
