@@ -89,7 +89,7 @@ main {
 }
 
 #content_official_launch{
-	margin-bottom: 100px;
+	padding-bottom: 12%;
 }
 #content_write_to_us {
     margin-bottom: 40px;
@@ -192,8 +192,12 @@ padding: 25px;
 #content_about_the_founder h2 {
     font-weight: normal;
 }
-#content_about_us, #content_business_logic {
-    padding: 5% 21% 10% 10%;
+#content_about_us {
+    padding: 5% 21% 7% 10%;
+    color: #2C3C43;
+}
+#content_business_logic {
+    padding: 14% 21% 12% 10%;
     color: #2C3C43;
 }
 #content_about_us h2,#content_business_logic h2 {
