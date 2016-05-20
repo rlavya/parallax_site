@@ -37,7 +37,7 @@ body,h1, h2, h3, h4, h5 {
     bottom: 0;
     width: 100%;
     z-index: 999;
-   
+
 }
 #footer_left, #footer_right, #footer_middle {
     display: inline-block;
@@ -167,6 +167,7 @@ main {
 #content_official_launch {
 	padding-top: 115px;
     padding-bottom: 12%;
+    color: #2C3C43;
 }
 #official_launch_heading {
 	padding: 25px;
