@@ -29,7 +29,7 @@
             </div>
         </header>
         <main>
-            <section id="content">
+            <section id="content" class="active">
                 <div id="content_heading1">
                     <p>
                         The First Equity Based Crowdfunding and an Integrated E_Commerce Company
@@ -44,9 +44,7 @@
             </section>
             <section id="content_about_us">
                 <div class="about_us_heading">
-                  
-                        About Us
-                  
+                    About Us
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -57,9 +55,7 @@
                     </p>
                 </div>
                 <div class="about_us_heading">
-                    
-                        Our Core
-                    
+                    Our Core
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -73,9 +69,7 @@
                     </p>
                 </div>
                 <div class="about_us_heading">
-              
-                        Mission
-               
+                    Mission
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -84,9 +78,7 @@
                     </p>
                 </div>
                 <div class="about_us_heading">
-               
-                        What we do
-                 
+                    What we do
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -100,9 +92,7 @@
             </section>
             <section id="content_about_the_founder">
                 <div class="about_us_heading">
-                 
-                        About the Founder
-                
+                    About the Founder
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -221,60 +211,62 @@
                             </b>
                         </h4>
                     </div>
-                    <div class="">
-                        <span>
-                            <input name="name" placeholder="First Name" type="text" value=""/>
-                        </span>
-                        <span>
-                            <input name="name" placeholder="Last Name" type="text" value=""/>
-                        </span>
-                    </div>
-                    <div class="">
-                        <span>
-                            <textarea cols="37" name="name" placeholder="Permanent Address" rows="4">
-                            </textarea>
-                        </span>
-                        <span>
-                            <textarea cols="37" name="name" placeholder="Current Address" rows="4">
-                            </textarea>
-                        </span>
-                    </div>
-                    <div class="">
-                        <span>
-                            <input name="name" placeholder="Contact Number" type="text" value=""/>
-                        </span>
-                        <span>
-                            <input name="name" placeholder="Email Id" type="text" value=""/>
-                        </span>
-                    </div>
-                    <div class="">
-                        <span>
-                            <select class="dropdown_select join_team_select">
-                                <option>
-                                    Area of Interest
-                                </option>
-                                <option>
-                                    2
-                                </option>
-                                <option>
-                                    3
-                                </option>
-                            </select>
-                        </span>
-                        <span>
-                            <select class="dropdown_select join_team_select">
-                                <option>
-                                    Patnering with us as
-                                </option>
-                                <option>
-                                    2
-                                </option>
-                                <option>
-                                    3
-                                </option>
-                            </select>
-                        </span>
-                    </div>
+                    <form action="" id="join_the_team_form" onSubmit="return formValidation();>
+                        <div class="">
+                            <span>
+                                <input name="name" placeholder="First Name" type="text" value=""/>
+                            </span>
+                            <span>
+                                <input name="name" placeholder="Last Name" type="text" value=""/>
+                            </span>
+                        </div>
+                        <div class="">
+                            <span>
+                                <textarea cols="37" name="name" placeholder="Permanent Address" rows="4">
+                                </textarea>
+                            </span>
+                            <span>
+                                <textarea cols="37" name="name" placeholder="Current Address" rows="4">
+                                </textarea>
+                            </span>
+                        </div>
+                        <div class="">
+                            <span>
+                                <input id="contact_number" name="name" placeholder="Contact Number" type="number" value=""/>
+                            </span>
+                            <span>
+                                <input id="email_address" name="name" placeholder="Email Id" type="email" value=""/>
+                            </span>
+                        </div>
+                        <div class="">
+                            <span>
+                                <select class="dropdown_select join_team_select">
+                                    <option>
+                                        Area of Interest
+                                    </option>
+                                    <option>
+                                        2
+                                    </option>
+                                    <option>
+                                        3
+                                    </option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="dropdown_select join_team_select">
+                                    <option>
+                                        Patnering with us as
+                                    </option>
+                                    <option>
+                                        2
+                                    </option>
+                                    <option>
+                                        3
+                                    </option>
+                                </select>
+                            </span>
+                        </div>
+                    </form>
                 </div>
                 <div class="">
                     <div class="join_the_team">
