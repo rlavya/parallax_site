@@ -239,8 +239,7 @@ section{
 }
 .about_us_heading{
     font-size: 27px;
-    font-weight: normal;
-    padding-bottom: 10px 0px;
+    padding-bottom: 10px;
 }
 
 /* Responsive styles */
@@ -310,6 +309,12 @@ section{
     #content_write_to_us {
         padding: 3% 155px;
     }
+    .about_us_heading {
+        font-size: 20px;
+    }
+    #content_official_launch span {
+        font-size: 35px;
+    }
 }
 @media (max-width: 771px) {
     #content_write_to_us {
@@ -350,6 +355,16 @@ section{
     .about_paragraph {
         font-size: 15px;
     }
+    .about_us_heading {
+        font-size: 18px;
+    }
+    #content_about_us, #content_about_the_founder, #content_business_logic {
+        padding: 5% 15% 7% 10%;
+    }
+    #content_official_launch span {
+        font-size: 30px;
+    }
+
 }
 @media (max-width: 586px) {
     #content_heading1 {
@@ -369,6 +384,9 @@ section{
         font-size: 15px;
     }
     #content_about_us, #content_about_the_founder, #content_business_logic {
-        padding: 5% 21% 7% 10%;
+        padding: 5% 12% 7% 10%;
+    }
+    .about_us_heading {
+        font-size: 16px;
     }
 }
