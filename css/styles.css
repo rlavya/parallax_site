@@ -391,6 +391,7 @@ section{
         font-size: 16px;
     }
 }
+
 @media (max-width: 551px) {
     #content_heading {
         width: 80%;
@@ -432,3 +433,4 @@ section{
         padding: 3% 16px;
     }
 }
+

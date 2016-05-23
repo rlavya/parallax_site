@@ -1,26 +1,5 @@
 $( document ).ready(function() {
 
-    $(".demo").sectionsnap({
-// time dilay (ms)
-'delay': 100,
-
-// selector
-'selector': "section",
-
-// % of window height from which we start
-'reference': .9,
-
-// animation time (snap scrolling)
-'animationTime': 400,
-
-// offset top (no snap before scroll reaches this position)
-'offsetTop': 0,
-
-// offset bottom (no snap after bottom - offsetBottom)
-'offsetBottom': 0
-});
-
-
   // Init Skrollr
 var s = skrollr.init();
 
@@ -138,5 +117,7 @@ $(".countdown").countdown({
       }
       lastScrollTop = st;
     }
-  })      ;
+  });
+
+
 });

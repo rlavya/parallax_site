@@ -9,19 +9,25 @@
         </link>
         <script src="assets/lib/jquery-1.11.3.min.js">
         </script>
-        <script src="assets/lib/jquery-sectionsnap.js" type="text/javascript"></script>
         <!-- <script src="assets/lib/jquery.scrollify.min.js" type="text/javascript"></script> -->
         <script src="assets/lib/skrollr.min.js" type="text/javascript">
         </script>
-              <script src="assets/lib/jquery.scrollTo.min.js" type="text/javascript">
+        <script src="assets/lib/jquery.scrollTo.min.js" type="text/javascript">
         </script>
 
         <script src="assets/lib/smoothscroll.js" type="text/javascript">
         </script>
-
+        <!-- <script src="assets/lib/jquery.scrollify.min.js" type="text/javascript"> -->
+        </script>
+            <!-- <script>
+                $(function() {
+                    $.scrollify({
+                        section : "section",
+                    });
+                });
+            </script> -->
         <script src="js/script.js" type="text/javascript">
         </script>
-
     </head>
     <body>
         <header>
@@ -36,21 +42,27 @@
             </div>
         </header>
         <main class="main_class">
+            <section class="active" id="content">
+                <div class="bcg" data-anchor-target="#content" data-bottom-top="background-position: 50% 100px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;">
+                    <div class="hsContainer">
+                        <div class="hsContent" data--100-bottom="opacity: 0;" data-anchor-target="#content" data-center="opacity: 1" data-center-top="opacity: 0">
+                            <div id="content_heading1">
+                                <p>
+                                    The First Equity Based Crowdfunding and an Integrated E_Commerce Company
+                                </p>
+                                <p>
+                                    for
+                                </p>
+                                <p>
+                                    Non resident Indian Returnees
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <section id="content" class="active">
-                <div id="content_heading1">
-                    <p>
-                        The First Equity Based Crowdfunding and an Integrated E_Commerce Company
-                    </p>
-                    <p>
-                        for
-                    </p>
-                    <p>
-                        Non resident Indian Returnees
-                    </p>
                 </div>
             </section>
-            <section class="section" id="content_about_us">
+            <section id="content_about_us">
                 <div class="about_us_heading">
                     About Us
                 </div>
@@ -98,7 +110,13 @@
                     </p>
                 </div>
             </section>
+
             <section class="section" id="content_about_the_founder">
+
+               <div class="bcg" data-anchor-target="#content_about_the_founder" data-bottom-top="background-position: 50% 100px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;">
+                    <div class="hsContainer">
+                        <div class="hsContent" data--100-bottom="opacity: 0;" data-anchor-target="#content_about_the_founder" data-center="opacity: 1" data-center-top="opacity: 0">
+
                 <div class="about_us_heading">
                     About the Founder
                 </div>
@@ -134,6 +152,9 @@
                             Founder
                         </div>
                     </p>
+                </div>
+                </div>
+                </div>
                 </div>
             </section>
             <section class="section" id="content_business_logic">
@@ -219,6 +240,7 @@
                             </b>
                         </h4>
                     </div>
+
                     <form action="" id="join_the_team_form" method="post">
                         <div class="">
                             <span>
@@ -243,7 +265,7 @@
                                 <input id="contact_number" name="name" placeholder="Contact Number" type="number" value=""/>
                             </span>
                             <span>
-                                <input id="email_address" name="name" placeholder="Email Id" type="email" value=""/>
+                                <input id="email_address" name="name" placeholder="Email Id" type="email" value="" required/>
                             </span>
                         </div>
                         <div class="">
@@ -327,63 +349,55 @@
                         </button>
                     </div>
                 </form>
+
             </section>
+
         </main>
 
-        <script>
-		$(document).ready(function() {
-			$(".section").css("min-height", $(window).height() + "px");
-			$(".main_class").sectionsnap({
-				delay : 100
-				, selector : '.section'
-				, reference : 1
-				, animationTime : 600
-			});
-		});
-	</script>
-        <footer>
-            <div id="footer">
-                <div id="footer_left">
-                    <img alt="" src="assets/images/footer_left.png"/>
-                </div>
-                <div id="footer_middle">
-                    <ul>
-                        <li>
-                            <a class="smoothScroll" href="#content">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a class="smoothScroll" href="#content_about_us">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a class="smoothScroll" href="#content_about_the_founder">
-                                Founder
-                            </a>
-                        </li>
-                        <li>
-                            <a class="smoothScroll" href="#content_business_logic">
-                                Business Logic
-                            </a>
-                        </li>
-                        <li>
-                            <a class="smoothScroll" href="#content_official_launch">
-                                When
-                            </a>
-                        </li>
-                        <li>
-                            <a class="smoothScroll" href="#content_write_to_us">
-                                Write to Us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer_right">
-                    <img alt="" src="assets/images/footer_right.png"/>
-                </div>
-            </div>
-        </footer>
-    </body>
+    <footer>
+    <div id="footer">
+        <div id="footer_left">
+            <img alt="" src="assets/images/footer_left.png"/>
+        </div>
+        <div id="footer_middle">
+            <ul>
+                <li>
+                    <a class="smoothScroll" href="#content">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_about_us">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_about_the_founder">
+                        Founder
+                    </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_business_logic">
+                        Business Logic
+                    </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_official_launch">
+                        When
+                    </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_write_to_us">
+                        Write to Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer_right">
+            <img alt="" src="assets/images/footer_right.png"/>
+        </div>
+    </div>
+</footer>
+</body>
+
 </html>
