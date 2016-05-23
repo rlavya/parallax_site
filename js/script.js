@@ -1,10 +1,36 @@
 $( document ).ready(function() {
+
+    $(".demo").sectionsnap({
+// time dilay (ms)
+'delay': 100,
+
+// selector
+'selector': "section",
+
+// % of window height from which we start
+'reference': .9,
+
+// animation time (snap scrolling)
+'animationTime': 400,
+
+// offset top (no snap before scroll reaches this position)
+'offsetTop': 0,
+
+// offset bottom (no snap after bottom - offsetBottom)
+'offsetBottom': 0
+});
+
+
   // Init Skrollr
 var s = skrollr.init();
 
 
   var lastScrollTop = 0;
-
+  // $(function() {
+  // 				$.scrollify({
+  // 					section : "section",
+  // 				});
+  // 			});
 (function($) {
     $.fn.countdown = function(options, callback) {
 
@@ -12,7 +38,7 @@ var s = skrollr.init();
       var thisEl = $(this);
 
       //array of custom settings
-      var settings = { 
+      var settings = {
         'date': null,
         'format': null
       };
@@ -64,9 +90,9 @@ var s = skrollr.init();
           thisEl.find(".hours").text(hours);
           thisEl.find(".minutes").text(minutes);
           thisEl.find(".seconds").text(seconds);
-        } else { 
+        } else {
           alert("Invalid date. Here's an example: 12 Tuesday 2012 17:30:00");
-          clearInterval(interval); 
+          clearInterval(interval);
         }
       }
 
@@ -98,16 +124,16 @@ $(".countdown").countdown({
       // console.log(st +" :: " +lastScrollTop);
       if (st > lastScrollTop){
          current.next().addClass('active');
-    
+
           var currId = current.next().attr('id');
               console.log(currId)
-         $("#currId").slideUp();  
+         $("#currId").slideUp();
       } else {
         current.prev().addClass('active');
         var currId = current.prev().attr('id');
          console.log(currId)
 
-        $("#currId").slideDown();  
+        $("#currId").slideDown();
 
       }
       lastScrollTop = st;
