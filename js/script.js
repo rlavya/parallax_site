@@ -1,9 +1,7 @@
 $( document ).ready(function() {
   // Init Skrollr
 var s = skrollr.init();
- console.log(s)
-// Refresh Skrollr after resizing our sections
-s.refresh($('.homeSlide'));
+
 
   var lastScrollTop = 0;
 
