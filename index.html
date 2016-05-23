@@ -214,13 +214,13 @@
                             </b>
                         </h4>
                     </div>
-                    <form action="" id="join_the_team_form" onSubmit="return formValidation();">
+                    <form action="" id="join_the_team_form" method="post">
                         <div class="">
                             <span>
-                                <input name="name" placeholder="First Name" type="text" value=""/>
+                                <input name="name" placeholder="First Name" type="text" value="" required/>
                             </span>
                             <span>
-                                <input name="name" placeholder="Last Name" type="text" value=""/>
+                                <input name="name" placeholder="Last Name" type="text" value="" required/>
                             </span>
                         </div>
                         <div class="">
@@ -269,59 +269,59 @@
                                 </select>
                             </span>
                         </div>
-                    </form>
-                </div>
-                <div class="">
-                    <div class="join_the_team">
-                        <h4>
+                    </div>
+                    <div class="">
+                        <div class="join_the_team">
+                            <h4>
+                                <b>
+                                    Details Overseas Stay
+                                </b>
+                            </h4>
+                        </div>
+                        <div class="">
+                            <span>
+                                <input name="name" type="text" value=""/>
+                            </span>
+                            <span>
+                                <select class="dropdown_select overseas_select">
+                                    <option>
+                                        1
+                                    </option>
+                                    <option>
+                                        2
+                                    </option>
+                                    <option>
+                                        3
+                                    </option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="dropdown_select overseas_select">
+                                    <option>
+                                        1
+                                    </option>
+                                    <option>
+                                        2
+                                    </option>
+                                    <option>
+                                        3
+                                    </option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="">
+                            <textarea cols="80" name="name" rows="4" class="details_oversea_textarea">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="submit_button">
+                        <button name="button" type="submit">
                             <b>
-                                Details Overseas Stay
+                                SUBMIT
                             </b>
-                        </h4>
+                        </button>
                     </div>
-                    <div class="">
-                        <span>
-                            <input name="name" type="text" value=""/>
-                        </span>
-                        <span>
-                            <select class="dropdown_select overseas_select">
-                                <option>
-                                    1
-                                </option>
-                                <option>
-                                    2
-                                </option>
-                                <option>
-                                    3
-                                </option>
-                            </select>
-                        </span>
-                        <span>
-                            <select class="dropdown_select overseas_select">
-                                <option>
-                                    1
-                                </option>
-                                <option>
-                                    2
-                                </option>
-                                <option>
-                                    3
-                                </option>
-                            </select>
-                        </span>
-                    </div>
-                    <div class="">
-                        <textarea cols="80" name="name" rows="4" class="details_oversea_textarea">
-                        </textarea>
-                    </div>
-                </div>
-                <div class="submit_button">
-                    <button name="button" type="button">
-                        <b>
-                            SUBMIT
-                        </b>
-                    </button>
-                </div>
+                </form>
             </section>
         </main>
         <footer>

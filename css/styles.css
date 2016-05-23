@@ -163,6 +163,7 @@ main {
     border: none;
     border-radius: 5px;
     font-size: 12px;
+    cursor: pointer;
 }
 #content_official_launch {
 	padding-top: 115px;
