@@ -7,16 +7,14 @@
         <link href="assets/images/globe.png" rel="icon" sizes="16x16" type="image/gif"/>
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         </link>
-        <script src="assets/lib/jquery-1.11.3.min.js">
+        <link href="assets/lib/flipclock.css" rel="stylesheet" type="text/css"></link>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js">
         </script>
-        <script src="assets/lib/skrollr.min.js" type="text/javascript">
-        </script>
-              <script src="assets/lib/jquery.scrollTo.min.js" type="text/javascript">
-        </script>
-        <script src="assets/lib/smoothscroll.js" type="text/javascript">
+        <script src="assets/lib/flipclock.min.js" type="text/javascript">
         </script>
         <script src="js/script.js" type="text/javascript">
         </script>
+
     </head>
     <body>
         <header>
@@ -31,23 +29,24 @@
             </div>
         </header>
         <main>
-        
-            <section id="content" class="active">
+            <section id="content">
                 <div id="content_heading1">
-                    <p>
-                        The First Equity Based Crowdfunding and an Integrated E_Commerce Company
-                    </p>
-                    <p>
-                        for
-                    </p>
-                    <p>
-                        Non resident Indian Returnees
-                    </p>
+                   <p>
+                       The First Equity Based Crowdfunding and an Integrated E_Commerce Company
+                   </p>
+                   <p>
+                       for
+                   </p>
+                   <p>
+                       Non resident Indian Returnees
+                   </p>
                 </div>
             </section>
             <section id="content_about_us">
-                <div class="about_us_heading">
-                    About Us
+                <div class="about_heading">
+                    <h2>
+                        About Us
+                    </h2>
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -57,8 +56,10 @@
                         consequat.
                     </p>
                 </div>
-                <div class="about_us_heading">
-                    Our Core
+                <div class="about_heading">
+                    <h2>
+                        Our Core
+                    </h2>
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -71,8 +72,10 @@
                         consequat.
                     </p>
                 </div>
-                <div class="about_us_heading">
-                    Mission
+                <div class="about_heading">
+                    <h2>
+                        Mission
+                    </h2>
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -80,8 +83,10 @@
                         tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
-                <div class="about_us_heading">
-                    What we do
+                <div class="about_heading">
+                    <h2>
+                        What we do
+                    </h2>
                 </div>
                 <div class="about_paragraph">
                     <p>
@@ -94,12 +99,14 @@
                 </div>
             </section>
             <section id="content_about_the_founder">
-                <div class="about_us_heading">
-                    About the Founder
+                <div class="about_heading">
+                    <h2>
+                        About the Founder
+                    </h2>
                 </div>
                 <div class="about_paragraph">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                           consequat.
@@ -137,24 +144,23 @@
                         Business Logic
                     </h2>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                </p>
-                <p>
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <p>
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                </p>
-                <p>
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
-                <p>
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                </p>
-                <p>
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </p>
+                    <p>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <p>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    <p>
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    </p>
+                    <p>
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    </p>
+                    <p>
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </section>
             <section id="content_official_launch">
                 <div id="content_heading">
@@ -166,8 +172,7 @@
                     </div>
                     <p id="stay_tuned">
                         We are building something very cool. Stay tuned and be patient.
-
-    Your patience will be well paid.
+                        Your patience will be well paid.
                         <ul class="countdown">
                             <li>
                                 <span class="days">
@@ -214,62 +219,60 @@
                             </b>
                         </h4>
                     </div>
-                    <form action="" id="join_the_team_form" onSubmit="return formValidation();>
-                        <div class="">
-                            <span>
-                                <input name="name" placeholder="First Name" type="text" value=""/>
-                            </span>
-                            <span>
-                                <input name="name" placeholder="Last Name" type="text" value=""/>
-                            </span>
-                        </div>
-                        <div class="">
-                            <span>
-                                <textarea cols="37" name="name" placeholder="Permanent Address" rows="4">
-                                </textarea>
-                            </span>
-                            <span>
-                                <textarea cols="37" name="name" placeholder="Current Address" rows="4">
-                                </textarea>
-                            </span>
-                        </div>
-                        <div class="">
-                            <span>
-                                <input id="contact_number" name="name" placeholder="Contact Number" type="number" value=""/>
-                            </span>
-                            <span>
-                                <input id="email_address" name="name" placeholder="Email Id" type="email" value=""/>
-                            </span>
-                        </div>
-                        <div class="">
-                            <span>
-                                <select class="dropdown_select join_team_select">
-                                    <option>
-                                        Area of Interest
-                                    </option>
-                                    <option>
-                                        2
-                                    </option>
-                                    <option>
-                                        3
-                                    </option>
-                                </select>
-                            </span>
-                            <span>
-                                <select class="dropdown_select join_team_select">
-                                    <option>
-                                        Patnering with us as
-                                    </option>
-                                    <option>
-                                        2
-                                    </option>
-                                    <option>
-                                        3
-                                    </option>
-                                </select>
-                            </span>
-                        </div>
-                    </form>
+                    <div class="">
+                        <span>
+                            <input name="name" placeholder="First Name" type="text" value=""/>
+                        </span>
+                        <span>
+                            <input name="name" placeholder="Last Name" type="text" value=""/>
+                        </span>
+                    </div>
+                    <div class="">
+                        <span>
+                            <textarea cols="37" name="name" placeholder="Permanent Address" rows="4">
+                            </textarea>
+                        </span>
+                        <span>
+                            <textarea cols="37" name="name" placeholder="Current Address" rows="4">
+                            </textarea>
+                        </span>
+                    </div>
+                    <div class="">
+                        <span>
+                            <input name="name" placeholder="Contact Number" type="text" value=""/>
+                        </span>
+                        <span>
+                            <input name="name" placeholder="Email Id" type="text" value=""/>
+                        </span>
+                    </div>
+                    <div class="">
+                        <span>
+                            <select class="dropdown_select join_team_select">
+                                <option>
+                                    Area of Interest
+                                </option>
+                                <option>
+                                    2
+                                </option>
+                                <option>
+                                    3
+                                </option>
+                            </select>
+                        </span>
+                        <span>
+                            <select class="dropdown_select join_team_select">
+                                <option>
+                                    Patnering with us as
+                                </option>
+                                <option>
+                                    2
+                                </option>
+                                <option>
+                                    3
+                                </option>
+                            </select>
+                        </span>
+                    </div>
                 </div>
                 <div class="">
                     <div class="join_the_team">
@@ -281,7 +284,7 @@
                     </div>
                     <div class="">
                         <span>
-                            <input name="name" type="text" value=""/>
+                            <input name="name" type="text" value="" placeholder="Country"/>
                         </span>
                         <span>
                             <select class="dropdown_select overseas_select">
@@ -311,7 +314,7 @@
                         </span>
                     </div>
                     <div class="">
-                        <textarea cols="80" name="name" rows="4">
+                        <textarea cols="80" name="name" rows="4" class="details_oversea_textarea">
                         </textarea>
                     </div>
                 </div>
@@ -332,32 +335,32 @@
                 <div id="footer_middle">
                     <ul>
                         <li>
-                            <a class="smoothScroll" href="#content">
+                            <a href="#content">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a class="smoothScroll" href="#content_about_us">
+                            <a href="#content_about_us">
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a class="smoothScroll" href="#content_about_the_founder">
+                            <a href="#content_about_the_founder">
                                 Founder
                             </a>
                         </li>
                         <li>
-                            <a class="smoothScroll" href="#content_business_logic">
+                            <a href="#content_business_logic">
                                 Business Logic
                             </a>
                         </li>
                         <li>
-                            <a class="smoothScroll" href="#content_official_launch">
+                            <a href="#content_official_launch">
                                 When
                             </a>
                         </li>
                         <li>
-                            <a class="smoothScroll" href="#content_write_to_us">
+                            <a href="#content_write_to_us">
                                 Write to Us
                             </a>
                         </li>

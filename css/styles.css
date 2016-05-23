@@ -390,3 +390,17 @@ section{
         font-size: 16px;
     }
 }
+@media (max-width: 551px) {
+    #content_heading {
+        width: 80%;
+    }
+    .join_team_select {
+        width: 44%;
+        font-size: 12px;
+    }
+}
+@media (max-width: 360px) {
+    #content_heading {
+        width: 80%;
+    }
+}
