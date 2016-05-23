@@ -242,3 +242,133 @@ section{
     font-weight: normal;
     padding-bottom: 10px 0px;
 }
+
+/* Responsive styles */
+@media (max-width: 1057px) {
+    #content_official_launch ul {
+        padding: 0;
+    }
+     #content_official_launch li {
+         width: 20%;
+     }
+     #content_write_to_us {
+        padding: 3% 175px;
+    }
+    #content_write_to_us input, #content_write_to_us textarea {
+        width: 43%;
+    }
+    .join_team_select {
+        width: 45%;
+    }
+    .overseas_select {
+        width: 21%;
+    }
+    .details_oversea_textarea {
+        width: 93% !important;
+    }
+    #something_awesome {
+        padding: 25px 15px;
+    }
+    #stay_tuned {
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px) {
+    #content {
+        padding: 17% 0px 20% 0px;
+    }
+    #content_heading1 {
+        font-size: 23px;
+    }
+    #content_about_us h2, #content_business_logic h2, #official_launch_heading {
+        font-size: 25px;
+    }
+    #something_awesome {
+        padding: 25px 10px;
+        font-size: 18px;
+    }
+    #content_heading {
+        width: 60%;
+    }
+    #stay_tuned {
+        font-size: 15px;
+    }
+    #content_business_logic p {
+        font-size: 15px;
+    }
+    .about_paragraph p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 835px) {
+    #content_heading1 {
+        font-size: 20px;
+    }
+    #content_about_us h2, #content_business_logic h2, #content_about_the_founder h2 {
+        font-size: 20px;
+    }
+    #content_write_to_us {
+        padding: 3% 155px;
+    }
+}
+@media (max-width: 771px) {
+    #content_write_to_us {
+        padding: 3% 135px;
+    }
+}
+@media (max-width: 733px) {
+    #content_business_logic {
+        padding: 14% 18% 12% 10%;
+        color: #2C3C43;
+    }
+    #content_write_to_us input, #content_write_to_us textarea {
+        width: 40%;
+    }
+    .join_team_select {
+        width: 42%;
+    }
+    .overseas_select {
+        width: 19%;
+    }
+    .details_oversea_textarea {
+        width: 88% !important;
+    }
+    #content_heading1 {
+        font-size: 18px;
+    }
+    #content_write_to_us {
+        padding: 3% 72px;
+    }
+}
+@media (max-width: 660px) {
+    #content_heading1 {
+        font-size: 16px;
+    }
+    #content_heading {
+        width: 70%;
+    }
+    .about_paragraph {
+        font-size: 15px;
+    }
+}
+@media (max-width: 586px) {
+    #content_heading1 {
+        font-size: 15px;
+    }
+    #content_about_us h2, #content_business_logic h2, #content_about_the_founder h2, #something_awesome {
+        font-size: 18px;
+        padding: 0;
+    }
+    #official_launch_heading {
+        font-size: 19px;
+    }
+    #content_heading {
+        width: 70%;
+    }
+    .about_paragraph {
+        font-size: 15px;
+    }
+    #content_about_us, #content_about_the_founder, #content_business_logic {
+        padding: 5% 21% 7% 10%;
+    }
+}
