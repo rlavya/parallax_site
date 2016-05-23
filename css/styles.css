@@ -241,3 +241,22 @@ section{
     font-weight: normal;
     padding-bottom: 10px 0px;
 }
+.bcg {background-image:url('../assets/images/bg.png')}
+#slide-1 .hsContent {
+    margin-left: -450px;
+    top: auto;
+}
+#slide-1 h2 {
+    position: fixed;
+    top: 70%;
+}
+ Slide 2 
+#slide-2 .bcg {background-image:url('../assets/images/bg.png')}
+#slide-2 .hsContent {
+    margin-left: -450px;
+    top: auto;
+}
+#slide-2 h2 {
+    position: fixed;
+    top: 70%;
+}

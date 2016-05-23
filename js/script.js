@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+  // Init Skrollr
+var s = skrollr.init();
+ console.log(s)
+// Refresh Skrollr after resizing our sections
+s.refresh($('.homeSlide'));
+
   var lastScrollTop = 0;
 
 (function($) {
@@ -85,19 +91,26 @@ $(".countdown").countdown({
   $(document).scroll(function(event) {
     var st = $(this).scrollTop();
     var current = $('body').find('.active');
+    console.log(current)
     var top = current.offset().top;
-    console.log(top +" : :  " +st)
-    if (st > top + 160) {
+ console.log(top)
+    // console.log(top +" : :  " +st)
+    if (st > (top + 160)) {
       current.removeClass('active');
       // console.log(st +" :: " +lastScrollTop);
       if (st > lastScrollTop){
          current.next().addClass('active');
-         var currId = current.next().attr('id');
+    
+          var currId = current.next().attr('id');
+              console.log(currId)
          $("#currId").slideUp();  
       } else {
         current.prev().addClass('active');
         var currId = current.prev().attr('id');
+         console.log(currId)
+
         $("#currId").slideDown();  
+
       }
       lastScrollTop = st;
     }
