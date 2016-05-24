@@ -1,10 +1,13 @@
 html, body, main {
-	height: 100%;
+
 }
 body,h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica;
+}
+.section {
+	min-height: 300px;
 }
 #header {
 	height: 75px;
@@ -22,6 +25,7 @@ body,h1, h2, h3, h4, h5 {
     color:#fff;
     text-align: center;
     font-size: 25px;
+    padding-left: 24%;
 }
 #header img {
     width: 25%;
@@ -83,7 +87,7 @@ body,h1, h2, h3, h4, h5 {
 	text-align: center;
 	width: 50%;
 }
-main {
+.sections-wrapper {
     margin-top: 75px;
     background: url("../assets/images/bg.png") no-repeat fixed;
     background-size: 100% 100% ;
@@ -95,8 +99,7 @@ main {
 	padding: 5px;
 }
 #content_write_to_us {
-    margin-bottom: 40px;
-    padding: 3% 23%;
+    padding: 8% 23% 3% 23%;
 }
 .join_the_team {
     color: #2C3C43;
@@ -163,6 +166,7 @@ main {
     border: none;
     border-radius: 5px;
     font-size: 12px;
+    cursor: pointer;
 }
 #content_official_launch {
 	padding-top: 115px;
@@ -175,11 +179,11 @@ main {
 }
 #something_awesome {
 	font-size: 20px;
-padding: 25px;
+padding-top: 20px;
 }
 #stay_tuned {
 	font-size: 20px;
-	padding: 25px;
+	padding-top: 15px;
 }
 #official_launch_note {
 	font-size: 15px;
@@ -194,7 +198,7 @@ padding: 25px;
     font-weight: normal;
 }
 #content_about_us {
-    padding: 5% 21% 7% 10%;
+    padding: 8% 21% 7% 10%;
     color: #2C3C43;
 }
 #content_business_logic {
@@ -234,8 +238,13 @@ margin: 0 auto;
       font-size: 42px;
       font-weight:bold;
     }
-
-
+section{
+    background: transparent;
+}
+.about_us_heading{
+    font-size: 27px;
+    padding-bottom: 10px;
+}
 
 /* Responsive styles */
 @media (max-width: 1057px) {
@@ -304,6 +313,12 @@ margin: 0 auto;
     #content_write_to_us {
         padding: 3% 155px;
     }
+    .about_us_heading {
+        font-size: 20px;
+    }
+    #content_official_launch span {
+        font-size: 35px;
+    }
 }
 @media (max-width: 771px) {
     #content_write_to_us {
@@ -344,6 +359,16 @@ margin: 0 auto;
     .about_paragraph {
         font-size: 15px;
     }
+    .about_us_heading {
+        font-size: 18px;
+    }
+    #content_about_us, #content_about_the_founder, #content_business_logic {
+        padding: 5% 15% 7% 10%;
+    }
+    #content_official_launch span {
+        font-size: 30px;
+    }
+
 }
 @media (max-width: 586px) {
     #content_heading1 {
@@ -363,6 +388,60 @@ margin: 0 auto;
         font-size: 15px;
     }
     #content_about_us, #content_about_the_founder, #content_business_logic {
-        padding: 5% 21% 7% 10%;
+        padding: 5% 12% 7% 10%;
+    }
+    .about_us_heading {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 551px) {
+    #content_heading {
+        width: 80%;
+    }
+    .join_team_select {
+        width: 44%;
+        font-size: 12px;
+    }
+    #content_write_to_us {
+        padding: 3% 30px 3% 10%;
+    }
+    #content_official_launch span {
+        font-size: 25px;
+    }
+    #site_title {
+        padding-left: 18%;
+    }
+}
+@media (max-width: 475px) {
+    #content_heading {
+        width: 80%;
+    }
+    .join_team_select {
+        width: 44%;
+        font-size: 12px;
+    }
+    #something_awesome {
+        font-size: 15px;
+    }
+    #content_write_to_us {
+        padding: 3% 35px;
+    }
+    #site_title {
+        padding-left: 10%;
+    }
+}
+@media (max-width: 396px) {
+    #content_heading {
+        width: 80%;
+    }
+    #something_awesome {
+        font-size: 14px;
+    }
+    #content_write_to_us {
+        padding: 3% 16px;
+    }
+    #site_title {
+        padding-left: 2%;
     }
 }
