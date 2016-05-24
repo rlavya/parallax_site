@@ -1,61 +1,61 @@
-html,body,h1, h2, h3, h4, h5 {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica;
+html, body, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
 }
 .section {
-	min-height: 300px;
+    min-height: 300px;
 }
-#header {
-	height: 75px;
-	background-color: #2B3C43;
-	border-bottom: 1px solid #ccc;
-	width: 100%;
-	position: fixed;
-	top:0;
-    z-index: 999;
-   }
-#header_contatiner {
+header {
+    height: 75px;
+    background-color: #2B3C43;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#header_container {
     padding: 20px;
 }
 #site_title {
-    color:#fff;
+    color: #fff;
     text-align: center;
     font-size: 25px;
     padding-left: 24%;
 }
-#header img {
+header .header_img {
+    background: url('../assets/images/header_right.png') no-repeat;
+    background-size: 100% 100%;
     width: 25%;
     height: 100%;
     margin: 0;
     padding: 0;
     float: right;
 }
-#footer {
+footer {
     height: 62px;
     background-color: #2B3C43;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 999;
-
 }
 #footer_left, #footer_right, #footer_middle {
     display: inline-block;
 }
 #footer_left {
+    height: 62px;
     width: 25%;
-}
-#footer_left img {
-    width: 20%;
+    background: url('../assets/images/footer_left.png') no-repeat;
+    background-size: 20% 100%;
 }
 #footer_right {
+    height: 62px;
+    background: url('../assets/images/footer_right.png') no-repeat;
+    background-size: 100% 100%;
     float: right;
     width: 25%;
-}
-#footer_right img {
-    height: 62px;
-    float: right;
 }
 #footer_middle ul {
     list-style-type: none;
@@ -78,22 +78,19 @@ html,body,h1, h2, h3, h4, h5 {
     content: '|';
     padding-left: 20px;
 }
-#content_heading
-{
-	margin: 0 auto;
-	text-align: center;
-	width: 50%;
+#content_heading {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
 }
-.sections-wrapper {
+.sections_wrapper {
     margin-top: 75px;
     background: url("../assets/images/bg.png") no-repeat fixed;
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
 }
-#content_business_logic ul{
-	 list-style-type: none;
-}
-#content_business_logic li{
-	padding: 5px;
+#content_business_logic p {
+    width: 60%;
+    line-height: 2.3;
 }
 #content_write_to_us {
     padding: 8% 23% 3% 23%;
@@ -108,42 +105,33 @@ html,body,h1, h2, h3, h4, h5 {
     width: 45.2%;
     height: 33px;
     border-radius: 5px;
-    border-style: none;
     border: 1px solid #C1CFDD;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    margin: auto 15px 15px auto;
     padding-left: 10px;
     color: #7C7D7E;
     opacity: 0.8;
 }
 #content_write_to_us textarea {
     border-radius: 5px;
-    border-style: none;
     border: 1px solid #C1CFDD;
-    margin-bottom: 10px;
-    margin-right: 15px;
-    padding-left: 10px;
-    padding-top: 10px;
+    margin: 0px 15px 10px 0px;
+    padding: 10px 0px 0px 10px;
     color: #7C7D7E;
     opacity: 0.8;
 }
 .dropdown_select {
-    background: white;
     padding: 5px 25px 5px 5px;
     border: 1px solid #C1CFDD;
     cursor: pointer;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    background-image: url('../assets/images/arrow_down.png');
-    background-position: right 5px center;
+    background: #fff url("../assets/images/arrow_down.png") no-repeat right 5px center;
     background-size: 13px 13px;
-    background-repeat: no-repeat;
     color: #7C7D7E;
     height: 33px;
     border-radius: 5px;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    margin: 0px 15px 15px 0px;
     opacity: 0.8;
 }
 .join_team_select {
@@ -166,32 +154,32 @@ html,body,h1, h2, h3, h4, h5 {
     cursor: pointer;
 }
 #content_official_launch {
-	padding-top: 115px;
+    padding-top: 115px;
     padding-bottom: 12%;
     color: #2C3C43;
 }
 #official_launch_heading {
-	padding: 25px;
-	font-size: 30px;
+    padding: 25px;
+    font-size: 30px;
 }
 #something_awesome {
-	font-size: 20px;
-padding-top: 20px;
+    font-size: 20px;
+    padding-top: 40px;
 }
 #stay_tuned {
-	font-size: 20px;
-	padding-top: 15px;
+    font-size: 20px;
+    padding-top: 15px;
 }
 #official_launch_note {
-	font-size: 15px;
-	padding: 20px;
-	color: #FF0000;
+    font-size: 15px;
+    padding: 20px;
+    color: #FF0000;
 }
-#content_about_the_founder {
+#about_the_founder {
     padding: 10% 21% 10% 10%;
     color: #2C3C43;
 }
-#content_about_the_founder h2 {
+#about_the_founder h2 {
     font-weight: normal;
 }
 #content_about_us {
@@ -202,7 +190,7 @@ padding-top: 20px;
     padding: 14% 21% 12% 10%;
     color: #2C3C43;
 }
-#content_about_us h2,#content_business_logic h2 {
+#content_about_us h2, #content_business_logic h2, #content_heading h2 {
     font-weight: normal;
     font-size: 32px;
 }
@@ -213,45 +201,37 @@ padding-top: 20px;
     font-size: 25px;
     text-align: center;
 }
-#content_about_the_founder {
+#about_the_founder {
     padding: 10% 21% 10% 10%;
     color: #2C3C43;
 }
-#content_about_the_founder h2 {
+#about_the_founder h2 {
     font-weight: normal;
 }
-
 #content_official_launch ul {
-margin: 0 auto;
-  list-style:none;
-  }
-
-  #content_official_launch li {
-    width:24.4333%;
-    display:inline-block;
-    text-align:center;
-    }
-   #content_official_launch  span {
-      font-size: 42px;
-      font-weight:bold;
-    }
-section{
-    background: transparent;
+    margin: 0 auto;
+    list-style: none;
 }
-.about_us_heading{
-    font-size: 27px;
-    padding-bottom: 10px;
+#content_official_launch li {
+    width: 24.4333%;
+    display: inline-block;
+    text-align: center;
+}
+#content_official_launch span {
+    font-size: 42px;
+    font-weight: bold;
 }
 
 /* Responsive styles */
+
 @media (max-width: 1057px) {
     #content_official_launch ul {
         padding: 0;
     }
-     #content_official_launch li {
-         width: 20%;
-     }
-     #content_write_to_us {
+    #content_official_launch li {
+        width: 20%;
+    }
+    #content_write_to_us {
         padding: 3% 175px;
     }
     #content_write_to_us input, #content_write_to_us textarea {
@@ -280,7 +260,7 @@ section{
     #content_heading1 {
         font-size: 23px;
     }
-    #content_about_us h2, #content_business_logic h2, #official_launch_heading {
+    #content_about_us h2, #content_business_logic h2, #official_launch_heading, #about_the_founder h2 {
         font-size: 25px;
     }
     #something_awesome {
@@ -304,13 +284,13 @@ section{
     #content_heading1 {
         font-size: 20px;
     }
-    #content_about_us h2, #content_business_logic h2, #content_about_the_founder h2 {
+    #content_about_us h2, #content_business_logic h2, #about_the_founder h2 , #about_the_founder h2{
         font-size: 20px;
     }
     #content_write_to_us {
         padding: 3% 155px;
     }
-    .about_us_heading {
+    .content_about_us h2 {
         font-size: 20px;
     }
     #content_official_launch span {
@@ -356,22 +336,21 @@ section{
     .about_paragraph {
         font-size: 15px;
     }
-    .about_us_heading {
+    .content_about_us h2 {
         font-size: 18px;
     }
-    #content_about_us, #content_about_the_founder, #content_business_logic {
+    #content_about_us, #about_the_founder, #content_business_logic {
         padding: 5% 15% 7% 10%;
     }
     #content_official_launch span {
         font-size: 30px;
     }
-
 }
 @media (max-width: 586px) {
     #content_heading1 {
         font-size: 15px;
     }
-    #content_about_us h2, #content_business_logic h2, #content_about_the_founder h2, #something_awesome {
+    #content_about_us h2, #content_business_logic h2, #about_the_founder h2, #something_awesome {
         font-size: 18px;
         padding: 0;
     }
@@ -384,14 +363,13 @@ section{
     .about_paragraph {
         font-size: 15px;
     }
-    #content_about_us, #content_about_the_founder, #content_business_logic {
+    #content_about_us, #about_the_founder, #content_business_logic {
         padding: 5% 12% 7% 10%;
     }
-    .about_us_heading {
+    .content_about_us h2 {
         font-size: 16px;
     }
 }
-
 @media (max-width: 551px) {
     #content_heading {
         width: 80%;
