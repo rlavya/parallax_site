@@ -236,6 +236,7 @@ footer {
     padding: 0px;
     float: left;
 }
+
 /* Responsive styles */
 
 @media (max-width: 1057px) {
@@ -471,4 +472,101 @@ footer {
     #site_title {
         padding-left: 2%;
     }
+}
+
+
+/* Text Slider */
+#carousel {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#slides {
+    overflow: hidden;
+    position: relative;
+    width: 780px !important;
+    height: 250px;
+    margin-left: 60px;
+}
+
+#slides ul {
+    list-style: none;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slides li {
+    width: 780px !important;
+    height: 250px;
+    float: left;
+    text-align: center;
+    position: relative;
+    font-family: lato, sans-serif;
+    display: inline-block;
+}
+/* Styling for prev and next buttons */
+
+.btn-bar {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 40px;
+}
+
+#buttons {
+    padding: 0 0 5px 0;
+}
+
+#buttons a {
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    outline: 0;
+    margin: 30px 0px;
+    color: #b14943;
+    text-decoration: none;
+    padding: 9px;
+}
+a#next {
+    float: right;
+}
+a#prev:hover,
+a#next:hover {
+    color: #FFF;
+    text-shadow: .5px 0px #b14943;
+}
+
+.quote-phrase
+ {
+    font-family: sans-serif;
+    font-weight: 300;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px 20px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.quote-phrase {
+    height: 200px;
+    font-size: 24px;
+    color: #FFF;
+    font-style: italic;
+    text-shadow: .5px 0px #b14943;
+}
+
+.quote-marks {
+    font-size: 30px;
+    padding: 0 3px 3px;
+    position: inherit;
+}
+
+.quoteContainer
+ {
+    display: table;
+    width: 100%;
 }
