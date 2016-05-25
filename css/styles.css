@@ -286,9 +286,7 @@ footer {
     #stay_tuned {
         font-size: 15px;
     }
-    #content_business_logic p {
-        font-size: 15px;
-    }
+  
     .about_paragraph p {
         font-size: 15px;
     }
@@ -299,7 +297,8 @@ footer {
 }
 @media (max-width: 835px) {
     #content_heading1 {
-        font-size: 20px;
+    padding-top: 50px;
+    font-size: 26px;
     }
     #content_about_us h2, #content_business_logic h2, #about_the_founder h2 , #about_the_founder h2{
         font-size: 20px;
@@ -354,9 +353,7 @@ footer {
     #content_heading {
         width: 70%;
     }
-    .about_paragraph {
-        font-size: 15px;
-    }
+   
     .content_about_us h2 {
         font-size: 18px;
     }
@@ -369,10 +366,11 @@ footer {
 }
 @media (max-width: 586px) {
     #content_heading1 {
-        font-size: 15px;
+    padding-top: 50px;
+    font-size: 24px;
     }
     #content_about_us h2, #content_business_logic h2, #about_the_founder h2, #something_awesome {
-        font-size: 18px;
+        font-size: 15px;
         padding: 0;
     }
     #official_launch_heading {
@@ -381,8 +379,11 @@ footer {
     #content_heading {
         width: 70%;
     }
-    .about_paragraph {
-        font-size: 15px;
+    #content_about_us p{
+        font-size: 11.5px;
+    }
+    .about_paragraph p{
+        font-size: 13px;
     }
     #content_about_us, #about_the_founder, #content_business_logic {
         padding: 5% 12% 7% 10%;
@@ -409,7 +410,7 @@ footer {
         padding-left: 18%;
     }
     #content_business_logic p {
-        width: 90%;
+     /*   width: 90%;*/
     }
 }
 @media (max-width: 475px) {
@@ -451,5 +452,11 @@ footer {
     }
     #site_title {
         padding-left: 2%;
+    }
+}
+@media (min-width: :360px)
+{
+     .about_paragraph p{
+        font-size: 13px;
     }
 }
