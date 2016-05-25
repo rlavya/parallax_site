@@ -84,16 +84,13 @@ $(document).ready(function() {
                     clearInterval(interval);
                 }
             }
-
             //run the function
             countdown_proc();
 
             //loop the function
             interval = setInterval(countdown_proc, 1000);
-
         }
     })(jQuery);
-
 
     //Call countdown plugin
     $(".countdown").countdown({
@@ -101,33 +98,5 @@ $(document).ready(function() {
         format: "on" // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
     });
     $('#content').addClass('active');
-    $(document).scroll(function(event) {
-        var st = $(this).scrollTop();
-        var current = $('body').find('.active');
-        console.log(current)
-        var top = current.offset().top;
-        console.log(top)
-            // console.log(top +" : :  " +st)
-        if (st > (top + 160)) {
-            current.removeClass('active');
-            // console.log(st +" :: " +lastScrollTop);
-            if (st > lastScrollTop) {
-                current.next().addClass('active');
-
-                var currId = current.next().attr('id');
-                console.log(currId)
-                $("#currId").slideUp();
-            } else {
-                current.prev().addClass('active');
-                var currId = current.prev().attr('id');
-                console.log(currId)
-
-                $("#currId").slideDown();
-
-            }
-            lastScrollTop = st;
-        }
-    });
-
 
 });
