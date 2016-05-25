@@ -100,34 +100,34 @@ $(document).ready(function() {
         date: "2 february 2017 6:19:00", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
         format: "on" // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
     });
-    $('#content').addClass('active');
-    $(document).scroll(function(event) {
-        var st = $(this).scrollTop();
-        var current = $('body').find('.active');
-        console.log(current)
-        var top = current.offset().top;
-        console.log(top)
-            // console.log(top +" : :  " +st)
-        if (st > (top + 160)) {
-            current.removeClass('active');
-            // console.log(st +" :: " +lastScrollTop);
-            if (st > lastScrollTop) {
-                current.next().addClass('active');
+    // $('#content').addClass('active');
+    // $(document).scroll(function(event) {
+    //     var st = $(this).scrollTop();
+    //     var current = $('body').find('.active');
+    //     console.log(current)
+    //     var top = current.offset().top;
+    //     console.log(top)
+    //         // console.log(top +" : :  " +st)
+    //     if (st > (top + 160)) {
+    //         current.removeClass('active');
+    //         // console.log(st +" :: " +lastScrollTop);
+    //         if (st > lastScrollTop) {
+    //             current.next().addClass('active');
 
-                var currId = current.next().attr('id');
-                console.log(currId)
-                $("#currId").slideUp();
-            } else {
-                current.prev().addClass('active');
-                var currId = current.prev().attr('id');
-                console.log(currId)
+    //             var currId = current.next().attr('id');
+    //             console.log(currId)
+    //             $("#currId").slideUp();
+    //         } else {
+    //             current.prev().addClass('active');
+    //             var currId = current.prev().attr('id');
+    //             console.log(currId)
 
-                $("#currId").slideDown();
+    //             $("#currId").slideDown();
 
-            }
-            lastScrollTop = st;
-        }
-    });
+    //         }
+    //         lastScrollTop = st;
+    //     }
+    // });
 
 
 });
