@@ -20,9 +20,7 @@
 <body>
     <header>
         <div class="header_img">
-
         </div>
-        <!-- <img src="assets/images/header_right.png"> -->
         <div id="header_container">
             <div id="site_title">
                 Let's Help Ourselves
@@ -300,67 +298,6 @@
             });
         });
     </script>
-    <footer>
-        <div id="footer_left"></div>
-        <div id="footer_middle">
-            <ul>
-                <li>
-                    <a class="smoothScroll" href="#content">
-                            Home
-                        </a>
-                </li>
-                <li>
-                    <a class="smoothScroll" href="#content_about_us">
-                            About Us
-                        </a>
-                </li>
-                <li>
-                    <a class="smoothScroll" href="#about_the_founder">
-                            Founder
-                        </a>
-                </li>
-                <li>
-                    <a class="smoothScroll" href="#content_business_logic">
-                            Business Logic
-                        </a>
-                </li>
-                <li>
-                    <a class="smoothScroll" href="#content_official_launch">
-                            When
-                        </a>
-                </li>
-                <li>
-                    <a class="smoothScroll" href="#content_write_to_us">
-                            Write to Us
-                        </a>
-                </li>
-            </ul>
-            <div class="hide_ul">
-                <div class="flex_item"> <a class="smoothScroll" href="#content">
-                          Home
-                      </a></div>
-                <div class="flex_item"><a class="smoothScroll" href="#content_about_us">
-                      About Us
-                  </a></div>
-                <div class="flex_item"><a class="smoothScroll" href="#about_the_founder">
-                      Founder
-                  </a></div>
-            </div>
-            <div class="hide_ul">
-                <div class="flex_item"><a class="smoothScroll" href="#content_business_logic">
-                    Business Logic
-                </a></div>
-                <div class="flex_item"><a class="smoothScroll" href="#content_official_launch">
-                      When
-                  </a></div>
-                <div class="flex_item"><a class="smoothScroll" href="#content_write_to_us">
-                      Write to Us
-                  </a></div>
-            </div>
-
-        </div>
-        <div id="footer_right"></div>
-    </footer>
     <script>
         function slider_function () {
             var speed = 5000;
@@ -432,16 +369,75 @@
             $('#next').click();
         }
     </script>
+    <footer>
+        <div id="footer_left"></div>
+        <div id="footer_middle">
+            <ul>
+                <li>
+                    <a class="smoothScroll" href="#content">
+                            Home
+                        </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_about_us">
+                            About Us
+                        </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#about_the_founder">
+                            Founder
+                        </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_business_logic">
+                            Business Logic
+                        </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_official_launch">
+                            When
+                        </a>
+                </li>
+                <li>
+                    <a class="smoothScroll" href="#content_write_to_us">
+                            Write to Us
+                        </a>
+                </li>
+            </ul>
+            <div class="hide_ul">
+                <div class="flex_item"> <a class="smoothScroll" href="#content">
+                          Home
+                      </a></div>
+                <div class="flex_item"><a class="smoothScroll" href="#content_about_us">
+                      About Us
+                  </a></div>
+                <div class="flex_item"><a class="smoothScroll" href="#about_the_founder">
+                      Founder
+                  </a></div>
+            </div>
+            <div class="hide_ul">
+                <div class="flex_item"><a class="smoothScroll" href="#content_business_logic">
+                    Business Logic
+                </a></div>
+                <div class="flex_item"><a class="smoothScroll" href="#content_official_launch">
+                      When
+                  </a></div>
+                <div class="flex_item"><a class="smoothScroll" href="#content_write_to_us">
+                      Write to Us
+                  </a></div>
+            </div>
+
+        </div>
+        <div id="footer_right"></div>
+    </footer>
 </body>
 <script type="text/javascript">
 $(document).ready(function() {
     $.getJSON( "textSlider.json", function(data) {
         $.each(data, function (i, f) {
-            console.log(f.text);debugger;
             $("#slides ul").append('<li class="slide"><div class="quoteContainer"><p class="quote-phrase"><span class="quote-marks">"</span>'+f.text+'<span class="quote-marks">"</span></p></div></li>');
             slider_function();
         })
-
     });
 });
 </script>

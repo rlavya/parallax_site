@@ -237,6 +237,92 @@ footer {
     float: left;
 }
 
+/* Text Slider */
+#carousel {
+    position: relative;
+    margin: 0 auto;
+}
+
+#slides {
+    overflow: hidden;
+    position: relative;
+    width: 780px !important;
+    height: 250px;
+    margin: auto;
+}
+
+#slides ul {
+    list-style: none;
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slides li {
+    width: 780px !important;
+    height: 250px;
+    float: left;
+    text-align: center;
+    position: relative;
+    font-family: lato, sans-serif;
+    display: inline-block;
+}
+/* Styling for prev and next buttons */
+
+.btn-bar {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 40px;
+}
+
+#buttons {
+    padding: 0 0 5px 0;
+}
+
+#buttons a {
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    outline: 0;
+    margin: 30px 0px;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px;
+    z-index: 1;
+}
+a#next {
+    float: right;
+}
+a#prev:hover, a#next:hover {
+    color: #2C3C43;
+    text-shadow: .5px 0px #b14943;
+}
+.quote-phrase {
+     font-family: sans-serif;
+     font-weight: 300;
+     display: table-cell;
+     vertical-align: middle;
+     padding: 5px 20px;
+     font-family: 'Lato', Calibri, Arial, sans-serif;
+     height: 200px;
+     font-size: 24px;
+     color: #2C3C43;
+     font-style: italic;
+}
+.quote-marks {
+    font-size: 30px;
+    padding: 0 3px 3px;
+    position: inherit;
+}
+.quoteContainer {
+    display: table;
+    width: 100%;
+}
+
 /* Responsive styles */
 
 @media (max-width: 1057px) {
@@ -273,6 +359,12 @@ footer {
     #footer_left {
         width: 6%;
         background-size: 100% 100%;
+    }
+    #buttons a {
+        margin: 24px 0px !important;
+    }
+    .quote-phrase {
+        font-size: 20px !important;
     }
 }
 @media (max-width: 909px) {
@@ -327,6 +419,16 @@ footer {
     #footer_middle li:not(:last-child) a:after {
         padding-left: 11px;
     }
+    #slides {
+        width: 700px !important;
+        margin: 0 4%;
+    }
+    #slides li {
+        width: 710px !important;
+    }
+    .quote-phrase {
+        font-size: 20px !important;
+    }
 }
 @media (max-width: 771px) {
     #content_write_to_us {
@@ -337,6 +439,16 @@ footer {
     }
     #footer_middle li {
         padding: 20px 0px 20px 15px;
+    }
+    #slides {
+        width: 660px !important;
+        margin: 0 4%;
+    }
+    #slides li {
+        width: 660px !important;
+    }
+    .quote-phrase {
+        font-size: 18px !important;
     }
 }
 @media (max-width: 733px) {
@@ -375,6 +487,25 @@ footer {
         color: #fff;
         text-decoration: none;
     }
+    #slides {
+        width: 615px !important;
+        margin: 0 6%;
+    }
+    #slides li {
+        width: 615px !important;
+    }
+    .quote-phrase {
+        font-size: 17px !important;
+    }
+}
+@media (max-width: 695px) {
+    #slides {
+        width: 600px !important;
+        margin: 0 4%;
+    }
+    #slides li {
+        width: 600px !important;
+    }
 }
 @media (max-width: 660px) {
     #content_heading1 {
@@ -394,6 +525,13 @@ footer {
     }
     #content_official_launch span {
         font-size: 30px;
+    }
+    #slides {
+        width: 520px !important;
+        margin: 0 5%;
+    }
+    #slides li {
+        width: 520px !important;
     }
 }
 @media (max-width: 586px) {
@@ -419,6 +557,16 @@ footer {
     .content_about_us h2 {
         font-size: 16px;
     }
+    #slides {
+        width: 490px !important;
+        margin: 0 4%;
+    }
+    #slides li {
+        width: 490px !important;
+    }
+    .quote-phrase {
+        font-size: 16px !important;
+    }
 }
 @media (max-width: 551px) {
     #content_heading {
@@ -440,6 +588,16 @@ footer {
     #content_business_logic p {
         width: 90%;
     }
+    #slides {
+        width: 400px !important;
+        margin: 0 6%;
+    }
+    #slides li {
+        width: 400px !important;
+    }
+    .quote-phrase {
+        font-size: 15px !important;
+    }
 }
 @media (max-width: 475px) {
     #content_heading {
@@ -458,6 +616,22 @@ footer {
     #site_title {
         padding-left: 10%;
     }
+    #slides {
+        width: 330px !important;
+        margin: 0 12%;
+    }
+    #slides li {
+        width: 330px !important;
+    }
+}
+@media (max-width: 425px) {
+    #slides {
+        width: 315px !important;
+        margin: 0 10%;
+    }
+    #slides li {
+        width: 315px !important;
+    }
 }
 @media (max-width: 396px) {
     #content_heading {
@@ -472,101 +646,11 @@ footer {
     #site_title {
         padding-left: 2%;
     }
-}
-
-
-/* Text Slider */
-#carousel {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-}
-
-#slides {
-    overflow: hidden;
-    position: relative;
-    width: 780px !important;
-    height: 250px;
-    margin-left: 60px;
-}
-
-#slides ul {
-    list-style: none;
-    width: 100%;
-    height: 250px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-#slides li {
-    width: 780px !important;
-    height: 250px;
-    float: left;
-    text-align: center;
-    position: relative;
-    font-family: lato, sans-serif;
-    display: inline-block;
-}
-/* Styling for prev and next buttons */
-
-.btn-bar {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    top: 40px;
-}
-
-#buttons {
-    padding: 0 0 5px 0;
-}
-
-#buttons a {
-    text-align: center;
-    display: inline-block;
-    font-size: 50px;
-    outline: 0;
-    margin: 30px 0px;
-    color: #b14943;
-    text-decoration: none;
-    padding: 9px;
-}
-a#next {
-    float: right;
-}
-a#prev:hover,
-a#next:hover {
-    color: #FFF;
-    text-shadow: .5px 0px #b14943;
-}
-
-.quote-phrase
- {
-    font-family: sans-serif;
-    font-weight: 300;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 5px 20px;
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-}
-
-.quote-phrase {
-    height: 200px;
-    font-size: 24px;
-    color: #FFF;
-    font-style: italic;
-    text-shadow: .5px 0px #b14943;
-}
-
-.quote-marks {
-    font-size: 30px;
-    padding: 0 3px 3px;
-    position: inherit;
-}
-
-.quoteContainer
- {
-    display: table;
-    width: 100%;
+    #slides {
+        width: 280px !important;
+        margin: 0 10%;
+    }
+    #slides li {
+        width: 280px !important;
+    }
 }
