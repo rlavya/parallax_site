@@ -195,7 +195,7 @@ footer {
     font-size: 32px;
 }
 #content {
-    padding: 14% 0px 17% 0px;
+    padding: 9% 0px 0px 0px;
 }
 #content_heading1 {
     font-size: 25px;
@@ -236,91 +236,53 @@ footer {
     padding: 0px;
     float: left;
 }
+.content_slider {
+    width: 82% !important;
+    font-size: 20px;
+    font-style: italic;
+    padding: 9%;
+    line-height: 1.8;
+    color: #2C3C43;
+}
 
 /* Text Slider */
-#carousel {
-    position: relative;
-    margin: 0 auto;
-}
+.jssora22l,
+.jssora22r {
 
-#slides {
-    overflow: hidden;
-    position: relative;
-    width: 780px !important;
-    height: 250px;
-    margin: auto;
-}
-
-#slides ul {
-    list-style: none;
-    width: 100%;
-    height: 250px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-#slides li {
-    width: 780px !important;
-    height: 250px;
-    float: left;
-    text-align: center;
-    position: relative;
-    font-family: lato, sans-serif;
-    display: inline-block;
-}
-/* Styling for prev and next buttons */
-
-.btn-bar {
-    width: 100%;
-    margin: 0 auto;
     display: block;
     position: absolute;
-    top: 40px;
-}
-
-#buttons {
-    padding: 0 0 5px 0;
-}
-
-#buttons a {
-    text-align: center;
-    display: inline-block;
-    font-size: 50px;
-    outline: 0;
-    margin: 30px 0px;
-    color: #fff;
-    text-decoration: none;
-    padding: 9px;
+    /* size of arrow element */
+    width: 40px;
+    height: 58px;
+    cursor: pointer;
+    background: url('../assets/images/a22.png') center center no-repeat;
+    overflow: hidden;
+    top: 127px !important;
     z-index: 1;
 }
-a#next {
-    float: right;
+
+.jssora22l {
+    background-position: -10px -31px;
 }
-a#prev:hover, a#next:hover {
-    color: #2C3C43;
-    text-shadow: .5px 0px #b14943;
+
+.jssora22r {
+    background-position: -70px -31px;
 }
-.quote-phrase {
-     font-family: sans-serif;
-     font-weight: 300;
-     display: table-cell;
-     vertical-align: middle;
-     padding: 5px 20px;
-     font-family: 'Lato', Calibri, Arial, sans-serif;
-     height: 200px;
-     font-size: 24px;
-     color: #2C3C43;
-     font-style: italic;
+
+.jssora22l:hover {
+    background-position: -130px -31px;
 }
-.quote-marks {
-    font-size: 30px;
-    padding: 0 3px 3px;
-    position: inherit;
+
+.jssora22r:hover {
+    background-position: -190px -31px;
 }
-.quoteContainer {
-    display: table;
-    width: 100%;
+
+.jssora22l.jssora22ldn {
+    background-position: -250px -31px;
+}
+
+.jssora22r.jssora22rdn {
+    background-position: -310px -31px;
 }
 
 /* Responsive styles */
@@ -359,12 +321,6 @@ a#prev:hover, a#next:hover {
     #footer_left {
         width: 6%;
         background-size: 100% 100%;
-    }
-    #buttons a {
-        margin: 24px 0px !important;
-    }
-    .quote-phrase {
-        font-size: 20px !important;
     }
 }
 @media (max-width: 909px) {
@@ -419,16 +375,6 @@ a#prev:hover, a#next:hover {
     #footer_middle li:not(:last-child) a:after {
         padding-left: 11px;
     }
-    #slides {
-        width: 700px !important;
-        margin: 0 4%;
-    }
-    #slides li {
-        width: 710px !important;
-    }
-    .quote-phrase {
-        font-size: 20px !important;
-    }
 }
 @media (max-width: 771px) {
     #content_write_to_us {
@@ -439,16 +385,6 @@ a#prev:hover, a#next:hover {
     }
     #footer_middle li {
         padding: 20px 0px 20px 15px;
-    }
-    #slides {
-        width: 660px !important;
-        margin: 0 4%;
-    }
-    #slides li {
-        width: 660px !important;
-    }
-    .quote-phrase {
-        font-size: 18px !important;
     }
 }
 @media (max-width: 733px) {
@@ -487,25 +423,6 @@ a#prev:hover, a#next:hover {
         color: #fff;
         text-decoration: none;
     }
-    #slides {
-        width: 615px !important;
-        margin: 0 6%;
-    }
-    #slides li {
-        width: 615px !important;
-    }
-    .quote-phrase {
-        font-size: 17px !important;
-    }
-}
-@media (max-width: 695px) {
-    #slides {
-        width: 600px !important;
-        margin: 0 4%;
-    }
-    #slides li {
-        width: 600px !important;
-    }
 }
 @media (max-width: 660px) {
     #content_heading1 {
@@ -525,13 +442,6 @@ a#prev:hover, a#next:hover {
     }
     #content_official_launch span {
         font-size: 30px;
-    }
-    #slides {
-        width: 520px !important;
-        margin: 0 5%;
-    }
-    #slides li {
-        width: 520px !important;
     }
 }
 @media (max-width: 586px) {
@@ -557,16 +467,6 @@ a#prev:hover, a#next:hover {
     .content_about_us h2 {
         font-size: 16px;
     }
-    #slides {
-        width: 490px !important;
-        margin: 0 4%;
-    }
-    #slides li {
-        width: 490px !important;
-    }
-    .quote-phrase {
-        font-size: 16px !important;
-    }
 }
 @media (max-width: 551px) {
     #content_heading {
@@ -588,16 +488,6 @@ a#prev:hover, a#next:hover {
     #content_business_logic p {
         width: 90%;
     }
-    #slides {
-        width: 400px !important;
-        margin: 0 6%;
-    }
-    #slides li {
-        width: 400px !important;
-    }
-    .quote-phrase {
-        font-size: 15px !important;
-    }
 }
 @media (max-width: 475px) {
     #content_heading {
@@ -616,22 +506,6 @@ a#prev:hover, a#next:hover {
     #site_title {
         padding-left: 10%;
     }
-    #slides {
-        width: 330px !important;
-        margin: 0 12%;
-    }
-    #slides li {
-        width: 330px !important;
-    }
-}
-@media (max-width: 425px) {
-    #slides {
-        width: 315px !important;
-        margin: 0 10%;
-    }
-    #slides li {
-        width: 315px !important;
-    }
 }
 @media (max-width: 396px) {
     #content_heading {
@@ -645,12 +519,5 @@ a#prev:hover, a#next:hover {
     }
     #site_title {
         padding-left: 2%;
-    }
-    #slides {
-        width: 280px !important;
-        margin: 0 10%;
-    }
-    #slides li {
-        width: 280px !important;
     }
 }

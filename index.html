@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-skrollr">
+<html>
 
 <head>
     <title>
@@ -9,12 +9,12 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     </link>
     <script src="assets/lib/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/lib/jssor.slider.mini.js"></script>
     <script src="assets/lib/skrollr.min.js" type="text/javascript"></script>
     <script src="assets/lib/jquery.scrollTo.min.js" type="text/javascript"></script>
     <script src="assets/lib/jquery-sectionsnap.js" type="text/javascript"></script>
     <script src="assets/lib/smoothscroll.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
-
 </head>
 
 <body>
@@ -30,17 +30,12 @@
     </header>
     <div class="sections_wrapper">
         <div class="section">
-            <section  id="content">
-                <div id="carousel">
-                    <div class="btn-bar">
-                        <div id="buttons">
-                            <a id="prev" href="#">
-                                <</a><a id="next" href="#">></a> </div>
-                    </div>
-                    <div id="slides">
-                        <ul>
-
-                        </ul>
+            <section id="content">
+                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+                    <!-- Arrow Navigator -->
+                    <span data-u="arrowleft" class="jssora22l" style="top:127px !important;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+                    <span data-u="arrowright" class="jssora22r" style="top:127px !important;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+                    <div id="text_slider" data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
                     </div>
                 </div>
             </section>
@@ -298,77 +293,6 @@
             });
         });
     </script>
-    <script>
-        function slider_function () {
-            var speed = 5000;
-
-            var run = setInterval(rotate, speed);
-            var slides = $('.slide');
-            var container = $('#slides ul');
-            var elm = container.find(':first-child').prop("tagName");
-            var item_width = container.width();
-            var previous = 'prev'; //id of previous button
-            var next = 'next'; //id of next button
-            slides.width(item_width); //set the slides to the correct pixel width
-            container.parent().width(item_width);
-            container.width(slides.length * item_width); //set the slides container to the correct total width
-            container.find(elm + ':first').before(container.find(elm + ':last'));
-            resetSlides();
-
-
-            //if user clicked on prev button
-
-            $('#buttons a').click(function(e) {
-                //slide the item
-
-                if (container.is(':animated')) {
-                    return false;
-                }
-                if (e.target.id == previous) {
-                    container.stop().animate({
-                        'left': 0
-                    }, 1500, function() {
-                        container.find(elm + ':first').before(container.find(elm + ':last'));
-                        resetSlides();
-                    });
-                }
-
-                if (e.target.id == next) {
-                    container.stop().animate({
-                        'left': item_width * -2
-                    }, 1500, function() {
-                        container.find(elm + ':last').after(container.find(elm + ':first'));
-                        resetSlides();
-                    });
-                }
-
-                //cancel the link behavior
-                return false;
-
-            });
-
-            //if mouse hover, pause the auto rotation, otherwise rotate it
-            container.parent().mouseenter(function() {
-                clearInterval(run);
-            }).mouseleave(function() {
-                run = setInterval(rotate, speed);
-            });
-
-
-            function resetSlides() {
-                //and adjust the container so current is in the frame
-                container.css({
-                    'left': -1 * item_width
-                });
-            }
-        }
-        //a simple function to click next link
-        //a timer will call this function, and the rotation will begin
-
-        function rotate() {
-            $('#next').click();
-        }
-    </script>
     <footer>
         <div id="footer_left"></div>
         <div id="footer_middle">
@@ -432,13 +356,14 @@
     </footer>
 </body>
 <script type="text/javascript">
-$(document).ready(function() {
-    $.getJSON( "textSlider.json", function(data) {
-        $.each(data, function (i, f) {
-            $("#slides ul").append('<li class="slide"><div class="quoteContainer"><p class="quote-phrase"><span class="quote-marks">"</span>'+f.text+'<span class="quote-marks">"</span></p></div></li>');
+    $(document).ready(function() {
+        $.getJSON("textSlider.json", function(data) {
+            $.each(data, function(i, f) {
+                $("#text_slider").append('<div data-p="225.00" style="display: none;" class="content_slider">'+ f.text +'</div>');
+            })
             slider_function();
-        })
+        });
     });
-});
 </script>
+
 </html>
